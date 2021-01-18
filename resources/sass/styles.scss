@@ -1,6 +1,6 @@
 
 //Globales
-h1, h2, h3{
+h1, h2, h3, h4{
     text-align: center !important;
 }
 h2{
@@ -8,6 +8,9 @@ h2{
 }
 h3{
     font-size: 2vw;
+}
+h4{
+    font-size: 1.5vw;
 }
 
 //header
@@ -27,3 +30,14 @@ h3{
         float:none;
 	    text-align:center;
     }
+
+.mensaje{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2vw;
+    p{
+        border-radius: 5%;
+        padding: .5%;
+    }
+}
