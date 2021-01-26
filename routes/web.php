@@ -25,12 +25,11 @@ Route::get('/alumnos/baja', function () {
     return view('admin.alumnoBaja');
 });
 Route::get('/constancias', function () {
-    return view('admin.constancia');
+    return view('admin.constancias');
 });
 //ruta para generar constancia de estudios
-Route::pattern('/alumno', '[0-9]+');
-Route::get('/alumno/{alumno}/constancia', 'AlumnoController@constancia');
 
+Route::resource('/constancia', 'ConstanciaController');
 Route::resource('/alumno', 'AlumnoController');
 Route::resource('/tutor', 'TutorController');
-
+Route::resource('/root', 'AdminController')->middleware('root');

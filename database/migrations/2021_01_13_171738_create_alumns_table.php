@@ -28,6 +28,7 @@ class CreateAlumnsTable extends Migration
             $table->string('nacionalidad');
             $table->char('grado', 1);
             $table->char('grupo', 1);
+            $table->string('turno');
             $table->string('estado')->default('Activo');
             $table->string('direccion');
             $table->string('colonia');

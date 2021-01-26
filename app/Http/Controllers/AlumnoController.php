@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use SebastianBergmann\Environment\Console;
 use App\Alumn;
+use PDF;
 
 use function GuzzleHttp\Promise\all;
 
@@ -17,6 +18,7 @@ class AlumnoController extends Controller
      */
     public function index()
     {
+        
         $datos = Alumn::all();
         return $datos;
         
@@ -30,6 +32,7 @@ class AlumnoController extends Controller
     public function create()
     {
         return view('admin.alumnoSecretaria');
+        
     }
 
     /**
@@ -56,6 +59,7 @@ class AlumnoController extends Controller
             $alumn->nacionalidad = $request->nacionalidad;
             $alumn->grado = $request->grado;
             $alumn->grupo = $request->grupo;
+            $alumn->turno = $request->turno;
             $alumn->direccion = $request->direccion;
             $alumn->colonia = $request->colonia;
             $alumn->cp = $request->cp;
@@ -116,6 +120,7 @@ class AlumnoController extends Controller
             $alumno->nacionalidad = $request->nacionalidad;
             $alumno->grado = $request->grado;
             $alumno->grupo = $request->grupo;
+            $alumno->turno = $request->turno;
             $alumno->direccion = $request->direccion;
             $alumno->colonia = $request->colonia;
             $alumno->cp = $request->cp;
@@ -147,6 +152,6 @@ class AlumnoController extends Controller
     }
 
     public function constancia($id){
-      return $id;   
+        
     }
 }

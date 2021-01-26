@@ -78,6 +78,14 @@
                 <input v-model="alumno.grupo" type="text" class="form-control" id="grupo">
             </div>
         </div>
+        <div class="col mb-3">
+            <label for="turno">Turno</label>
+            <select v-model="alumno.turno" class="form-select" id="turno">
+                <option selected></option>
+                <option value="matutino">Matutino</option>
+                <option value="vespertino">Vespertino</option>
+            </select>
+        </div>
 
         <h4>Domicilio</h4>
 
@@ -195,6 +203,7 @@
                     nacionalidad:'',
                     grado:'',
                     grupo:'',
+                    turno:'',
                     direccion:'',
                     colonia:'',
                     cp:'',
@@ -228,6 +237,7 @@
                     this.alumno.sexo.trim() === '' || this.alumno.sangre.trim() === '' ||
                     this.alumno.fechaNacimiento.trim() === '' || this.alumno.lugarNacimiento.trim() === '' ||
                     this.alumno.grado.trim() === '' ||  this.alumno.grupo.trim() === '' ||
+                    this.alumno.turno.trim() === '' ||
                     this.alumno.direccion.trim() === '' || this.alumno.colonia.trim() === '' ||
                     this.alumno.cp.trim() === '' || this.alumno.entidad.trim() === '' ||
                     this.alumno.ciudad.trim() === '' || this.tutor.nombre.trim() === '' ||
@@ -235,7 +245,7 @@
                     this.tutor.domicilio.trim() === '' || this.alumno.nacionalidad.trim() === '' ||  
                     this.tutor.ciudad.trim() === '' || this.tutor.colonia.trim() === '' || 
                     this.tutor.ocupacion.trim() === '' || this.tutor.telCasa.trim() === '' || 
-                    this.tutor.telTrabajo.trim() === '' || this.tutor.celular.trim() === '') 
+                    this.tutor.telTrabajo.trim() === '' || this.tutor.celular.trim() === '')
                     {
                         this.mensaje= "Debes completar todos los campos"
                         this.confirmacion = "bg-danger"
@@ -272,6 +282,7 @@
                         nacionalidad: this.alumno.nacionalidad,
                         grado: this.alumno.grado,
                         grupo: this.alumno.grupo,
+                        turno: this.alumno.turno,
                         direccion: this.alumno.direccion,
                         colonia: this.alumno.colonia,
                         cp: this.alumno.cp,
@@ -297,6 +308,7 @@
                         this.alumno.nacionalidad = '';
                         this.alumno.grado = '';
                         this.alumno.grupo = '';
+                        this.alumno.turno = '';
                         this.alumno.direccion = '';
                         this.alumno.colonia = '';
                         this.alumno.cp = '';

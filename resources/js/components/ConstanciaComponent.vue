@@ -44,8 +44,11 @@ export default {
     methods:{
         generar(item, index){
             this.id = item.id;
+            
         axios.get(`alumno/${this.id}/constancia`).then(res=>{
-            console.log(res.data);
+            
+            const content = res.headers['content-type'];
+            stream(res.data, file.file_name, content)
         })
         }
     }

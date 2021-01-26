@@ -24,6 +24,10 @@ Vue.component('alumno-component', require('./components/AlumnoComponent.vue').de
 Vue.component('editalumno-component', require('./components/EditAlumnoComponent.vue').default);
 Vue.component('bajaalumnos-component', require('./components/BajaAlumnosComponent.vue').default);
 Vue.component('constanciaalumnos-component', require('./components/ConstanciaComponent.vue').default);
+
+//para el usuario root
+Vue.component('createuser-component', require('./components/root/createUserComponent.vue').default);
+
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application

@@ -81,6 +81,16 @@
                 <input v-model="alumno.grupo" type="text" class="form-control" id="grupo">
             </div>
         </div>
+        <div class="col mb-3">
+                <label for="turno">Turno</label>
+                <select v-model="alumno.turno" class="form-select" id="turno">
+                    <option selected></option>
+                    <option value="matutino">Matutino</option>
+                    <option value="vespertino">Vespertino</option>
+                </select>
+            </div>
+
+            
 
         <h4>Domicilio</h4>
 
@@ -236,6 +246,7 @@
                     nacionalidad:'',
                     grado:'',
                     grupo:'',
+                    turno:'',
                     direccion:'',
                     colonia:'',
                     cp:'',
@@ -278,6 +289,7 @@
                 this.alumno.nacionalidad = item.nacionalidad;
                 this.alumno.grado = item.grado;
                 this.alumno.grupo = item.grupo;
+                this.alumno.turno = item.turno;
                 this.alumno.direccion = item.direccion;
                 this.alumno.colonia = item.colonia;
                 this.alumno.cp = item.cp;
@@ -307,7 +319,7 @@
             edit(){
                 if (this.alumno.nombre.trim() === '' || this.alumno.apellidoPaterno.trim() === '' ||
                     this.alumno.apellidoMaterno.trim() === '' || this.alumno.curp.trim() === '' ||
-                    this.alumno.telefono.trim() === '' || 
+                    this.alumno.telefono.trim() === '' || this.alumno.turno.trim() === '' ||
                     this.alumno.sexo.trim() === '' || this.alumno.sangre.trim() === '' ||
                     this.alumno.fechaNacimiento.trim() === '' || this.alumno.lugarNacimiento.trim() === '' ||
                     this.alumno.grado.trim() === '' ||  this.alumno.grupo.trim() === '' ||
@@ -350,6 +362,7 @@
                         nacionalidad: this.alumno.nacionalidad,
                         grado: this.alumno.grado,
                         grupo: this.alumno.grupo,
+                        turno: this.alumno.turno,
                         direccion: this.alumno.direccion,
                         colonia: this.alumno.colonia,
                         cp: this.alumno.cp,
