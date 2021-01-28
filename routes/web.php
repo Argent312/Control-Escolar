@@ -15,21 +15,30 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('admin.boleta');
+    return view('auth.login');
 });
+Route::get('/main', function () {
+    return view('main');
+})->name('main')->middleware('auth');
 
 Route::get('/alumnos/editar', function () {
     return view('admin.alumnoEdit');
-});
+})->name('editar')->middleware('secretaria-root');
+
 Route::get('/alumnos/baja', function () {
     return view('admin.alumnoBaja');
-});
+})->name('baja')->middleware('secretaria-root');
+
 Route::get('/constancias', function () {
     return view('admin.constancias');
-});
+})->middleware('secretaria-root');
 //ruta para generar constancia de estudios
 
-Route::resource('/constancia', 'ConstanciaController');
-Route::resource('/alumno', 'AlumnoController');
-Route::resource('/tutor', 'TutorController');
+Route::resource('/constancia', 'ConstanciaController')->middleware('secretaria-root');
+Route::resource('/alumno', 'AlumnoController')->middleware('secretaria-root');
+Route::resource('/tutor', 'TutorController')->middleware('secretaria-root');
 Route::resource('/root', 'AdminController')->middleware('root');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

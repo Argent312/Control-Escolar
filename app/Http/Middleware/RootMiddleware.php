@@ -18,7 +18,7 @@ class RootMiddleware
         if (auth()->check() && auth()->user()->tipo === 'subdirector') {
             return $next($request);
         }
-
+        //Cambiar por una vista donde diga que no tienes acceso
         return redirect('/');
     }
 }

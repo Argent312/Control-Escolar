@@ -52,7 +52,6 @@ class ConstanciaController extends Controller
         $datos = Alumn::findOrFail($id);
         $escuelas = School::all();
         $escuela = $escuelas[0];
-        
         $pdf = PDF::loadView('admin.constancia', compact('datos', 'escuela'));
         return $pdf->stream('constancia.pdf');
     }
