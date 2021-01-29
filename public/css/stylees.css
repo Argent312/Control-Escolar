@@ -1,0 +1,44 @@
+    .navbar-default {
+        background-color: #636e72;
+    }
+    
+    .collapse.navbar-collapse {
+        background-color: #f5f6fa;
+    }
+    
+    .col-6 div {
+        color: white;
+        float: center;
+        width: 360px;
+        height: 106px;
+        position: fixed;
+        font-family: 'Times New Roman';
+    }
+    
+    .col-6 {
+        width: 400px;
+        height: 200px;
+        float: right;
+        margin: none;
+        margin-right: 300px;
+        text-align: center;
+    }
+    
+    .col-3 img {
+        width: 200px;
+        height: 70px;
+        float: right;
+    }
+    
+    .col-31 img {
+        width: 250px;
+        height: 100px;
+        float: left;
+        position: relative;
+    }
+    
+    .dropdown-toggle {
+        background-color: #f5f6fa;
+        color: black;
+        font-size: 18px;
+    }
