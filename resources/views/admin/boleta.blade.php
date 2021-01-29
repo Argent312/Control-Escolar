@@ -1,12 +1,12 @@
 @extends('layouts.layout')
 @extends('layouts.headerForm')
-@section('title', 'Boleta Form')
+@section('title', 'Menu Docentes')
 
 @section('content')
 <html>
 
 <head>
-    <title> HOLA</title>
+    <title>Menu Docentes</title>
     <link rel="stylesheet" href="css/stylees.css">
 </head>
 
@@ -15,14 +15,14 @@
         <ul class="naveg">
             <li><a href="">GRUPOS</a>
                 <ul>
-                    <li><a href="">Asistencia</a>
+                    <li><a href="">ASISTENCIA</a>
                         <ul>
-                            <li><a class="report" href="{{('reporte/')}}">Reporte Para Asistencia.PDF</a></li>
+                            <li><a class="report" href="{{('reporte/')}}">REPORTE PARA ASISTENCIA.PDF</a></li>
                         </ul>
                     </li>
-                    <li><a href="">Calificacion</a>
+                    <li><a href="">CALIFICACIÓN</a>
                         <ul>
-                            <li><a href="{{('reporteCalif/')}}">Reporte Para calificacion.PDF</a></li>
+                            <li><a href="{{('reporteCalif/')}}">REPORTE PARA CALIFICACIÓN.PDF</a></li>
                         </ul>
                     </li>
                 </ul>
