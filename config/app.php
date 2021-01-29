@@ -139,7 +139,7 @@ return [
         /*
          * Laravel Framework Service Providers...
          */
-       
+        Barryvdh\DomPDF\ServiceProvider::class, 
         Illuminate\Auth\AuthServiceProvider::class,
         Illuminate\Broadcasting\BroadcastServiceProvider::class,
         Illuminate\Bus\BusServiceProvider::class,
@@ -190,7 +190,7 @@ return [
     */
 
     'aliases' => [
-       
+       'PDF' => Barryvdh\DomPDF\Facade::class,
         Way\Generators\GeneratorsServiceProvider::class,
         Xethron\MigrationsGenerator\MigrationsGeneratorServiceProvider::class,
         'App' => Illuminate\Support\Facades\App::class,
