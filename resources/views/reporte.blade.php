@@ -9,6 +9,7 @@
 <header>
 
     <div class="encab">
+        <h1>Reporte Para Asistencia</h1>
         <h2>Sistema Educativo Nacional</h2>
         <h2>Escuela Secundaria</h2>
         <h3>Clave 1234567</h3>
@@ -16,7 +17,6 @@
 </header>
 
 <body class="cuerpo">
-
     <div class="posiciontabla">
         <table class="tablasis">
             <thead class="encabezado">

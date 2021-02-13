@@ -33,6 +33,11 @@ Route::get('/', function () {
 //     DB::insert('insert into alumnos (idAlumno, curp, nombre, apellidoPaterno, apellidoMaterno, edad, sexo, tipoSangre, fechaNacimiento, direccion, colonia, codigoPostal, entidad, nacionalidad, estadoAlumno, tecnologia, telEmergencia) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)', [1, 'veoc', 'cesar', 'vel', 'ort', 20, 'M', 'O', '2005/11/01', 'calle', 'col', '91168', 'ver', 'mex', 'vig', 'sis', '81302']);
 // });
 
+//Route::get('/insert', function(){
+//     DB::insert('insert into alumnos (idAlumno, curp, nombre, apellidoPaterno, apellidoMaterno, edad, sexo, tipoSangre, fechaNacimiento, direccion, colonia, codigoPostal, entidad, nacionalidad, estadoAlumno, tecnologia, telEmergencia) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)', [3, 'VEOCMELIO', 'Emilio', 'Ortega', 'Mendez', 13, 'M', 'O+', '1900/11/01', 'calle Lazaro ', 'col. El Nogal', '91000', 'Veracruz', 'Mexico', 'Vigente', 'Sistemas Computacionales', '8141414']);
+// });
+ 
+
 
 // // Insercion de datos a la tabla MATERIAS BIEN
 // Route::get('/insert', function () {
@@ -54,8 +59,9 @@ Route::get('/', function () {
 // Route::get('/insert', function(){
 //       DB::insert('insert into periodo (idPeriodo, inicioClase, finClase) values (?,?,?)', [3, '2005/11/01', '2008/11/01']); 
 //   });
-
-
+//Route::get('/insert', function(){
+//      DB::insert('insert into periodo (idPeriodo, inicioClase, finClase) values (?,?,?)', [5, '2002/11/01', '2005/11/01']); 
+//  });
 
 
 // Insercion de datos a la tabla TRIMESTRE BIEN
@@ -77,6 +83,9 @@ Route::get('/', function () {
 //Route::get('/insert', function () {
   //   DB::insert('insert into calificaciones (idCalificaciones, alumnos_idAlumno, calificacion, faltas_asistencia, asistencias, grado, grupo, tipo, materias_idMaterias, Trimestre_idTrimestre) values (?,?,?,?,?,?,?,?,?,?)', [5, 1, 10, 3, 'HA', 'V', 'F', 'Matutino', 1, 1]);
    //  });
+//   Route::get('/insert', function () {
+//     DB::insert('insert into calificaciones (idCalificaciones, calificacion, faltas_asistencia, asistencias, grado, grupo, tipo, alumnos_idAlumno, materias_idMaterias, Trimestre_idTrimestre) values (?,?,?,?,?,?,?,?,?,?)', [6, 10, 0, '20', '2', 'B', 'Matutino', 1, 1, 1]);
+// });
 
 
    Route::get('/select', function(){
