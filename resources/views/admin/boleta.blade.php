@@ -40,5 +40,5 @@
         <button type="submit" class="btn btn-primary">Guardar Datos</button>
     </div>
 </form>
-
+<alumno-component></alumno-component>
 @endsection

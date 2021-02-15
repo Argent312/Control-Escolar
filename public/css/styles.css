@@ -1,6 +1,7 @@
 h1,
 h2,
-h3 {
+h3,
+h4 {
   text-align: center !important;
 }
 
@@ -9,6 +10,10 @@ h2 {
 }
 
 h3 {
+  font-size: 2.5vw;
+}
+
+h4 {
   font-size: 2vw;
 }
 
@@ -24,8 +29,40 @@ h3 {
   max-height: 50%;
 }
 
+.login {
+  background: url("/images/login-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.bienvenida {
+  border: 1px black solid;
+  margin: 10vw;
+  background-color: white;
+  max-width: 100%;
+}
+
+.bienvenida p {
+  text-align: center;
+  font-size: 2.5vw;
+}
+
 .centrar-button {
   float: none;
   text-align: center;
+}
+
+.mensaje {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2vw;
+}
+
+.mensaje p {
+  border-radius: 5%;
+  padding: 0.5%;
 }
 
