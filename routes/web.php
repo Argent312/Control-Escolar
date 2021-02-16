@@ -13,6 +13,15 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+//ruta para generar boleta de calificaciones
+Route::get('/admin', function () {
+    return view('admin.boleta');
+});
+
+Route::post('/pdfboleta', 'PDFController@PDFPeriodos')->name('boletaPDF');
+Route::get('/', 'PDFController@show');
+
+
 
 Route::get('/', function () {
     return view('auth.login');
