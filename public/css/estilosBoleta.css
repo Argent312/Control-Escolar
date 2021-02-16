@@ -1,0 +1,489 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+ #logo img{   
+        max-width: 10%;
+        min-height: 4%;
+        float: left;
+        margin-left: -2rem;
+        position: absolute;
+      }
+     
+    #logo2 img{   
+        max-width: 6%;
+        min-height: 5%;
+        float:inline-start;
+        margin-left: 21rem;
+        
+      }
+     #logo1 img{   
+        max-width: 5%;
+        min-height: 4%;
+        float: right;
+        margin-right: -2rem;
+        position:static;
+      }
+.cabecera{
+    max-width: 100%;
+    height: 6%;
+
+}
+
+.page-break {
+    page-break-after: always;
+}
+.grado{
+    margin-left: 18.7rem;
+    font-size: 8pt;
+    color: #8E8C8C;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+P{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+   
+}
+.datos{
+    font-size: 8pt;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    margin-left: -1rem;
+}
+.paterno {
+    border-top:solid;
+    border-color: #8E8C8C;
+    font-size: 7pt;
+    width: 21rem;
+    float: left;
+    text-align: center;
+    margin-left: -2rem;
+  }
+  .materno {
+    border-top:solid;
+    border-color: #8E8C8C;
+    font-size: 7pt;
+    width: 18rem;
+    text-align: center;
+    float:inline-start;
+    margin-left: 19rem;
+  }
+  .nombre {
+    border-top:solid;
+    border-color: #8E8C8C;
+    font-size: 7pt;
+    width: 18rem;
+    float: inline-end;
+    text-align: center;
+    margin-left: 35rem;
+  }
+  .curp {
+    border-top:solid;
+    border-color: #8E8C8C;
+    font-size: 7pt;
+    width: 17rem;
+    float: right;
+    text-align: center;
+    margin-right: -18rem;
+  }
+  .paterno1 {
+    
+    font-size: 7pt;
+    width: 18rem;
+    float: inline-start;
+    text-align: center;
+  }
+  .materno1 {
+   
+    font-size: 7pt;
+    width: 18rem;
+    text-align: center;
+    float:inline-start;
+    margin-left: 19rem;
+  }
+  .nombre1 {
+    
+    font-size: 7pt;
+    width: 18rem;
+    float: inline-end;
+    text-align: center;
+    margin-left: 35rem;
+  }
+  .curp1 {
+    
+    font-size: 7pt;
+    width: 17rem;
+    float: right;
+    text-align: center;
+  }
+  .form{
+      padding-bottom: 10px;
+  }
+  /* --------------------------------------Datos escuela------------------ */
+  .nomEscuela {
+    border-top:solid;
+    border-color: #8E8C8C;
+    font-size: 7pt;
+    width: 34rem;
+    float: left;
+    text-align: center;
+    margin-left: -2rem;
+  }
+  .grupo {
+    border-top:solid;
+    border-color: #8E8C8C;
+    font-size: 7pt;
+    width: 9rem;
+    text-align: center;
+    float:inline-start;
+    margin-left: 51rem;
+  }
+  .turno {
+    border-top:solid;
+    border-color: #8E8C8C;
+    font-size: 7pt;
+    width: 10rem;
+    float: inline-end;
+    text-align: center;
+    margin-left: 38rem;
+  }
+  .cct {
+    border-top:solid;
+    border-color: #8E8C8C;
+    font-size: 7pt;
+    width: 12rem;
+    float: right;
+    text-align: center;
+    margin-right: -13rem;
+    
+  }
+  .nomEscuela1 {
+    float: inline-start;
+    font-size: 7pt;
+    width: 30rem;
+    text-align: center;
+  }
+  .grupo1 {
+   
+    font-size: 7pt;
+    width: 9rem;
+    text-align: center;
+    float:inline-start;
+    margin-left: 51rem;
+  }
+  .turno1 {
+    
+    font-size: 7pt;
+    width: 10rem;
+    float: inline-end;
+    text-align: center;
+    margin-left: 38rem;
+  }
+  .cct1 {
+    
+    font-size: 7pt;
+    width: 12rem;
+    float: right;
+    text-align: center;
+  }
+  .form2{
+      margin-top: -0rem;
+  }
+  .datos2{
+    font-size: 8pt;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    margin-left: -1rem;
+}
+
+
+footer {
+  margin: 0px;
+  width: 100%;
+  height: 60px;
+}
+
+footer p {
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  height: 80px;
+  bottom: -10px;
+  line-height: .4;
+  text-align: left;
+  font-size: 14.2px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+  color: #000000;
+}
+
+.tablaCal{
+  width: 475px;
+  height: 460px;
+  margin-left: -2rem;
+ 
+}
+.table1{
+  table-layout: fixed;
+  width: 475px;
+  max-height: 460px;
+  float: left;
+}
+hr{
+  color: #8E8C8C;
+}
+.tablaCal .table1 td{
+  word-wrap: break-word;
+  height:5.3%;
+}
+
+.tabla2{
+  width: 475px;
+  margin-left: -2rem;
+}
+.table2{
+  table-layout: fixed;
+  width: 477px;
+  /*margin-left: -2rem;*/
+  margin-top: 90px;
+}
+
+thead{
+  background-color: #8E8C8C;
+}
+.firma {
+  border-top:solid;
+  border-color: #8E8C8C;
+  font-size: 7pt;
+  width: 25rem;
+  float: center;
+  text-align: center;
+  margin-left: 10rem;
+  color: #8E8C8C;
+  font-weight: lighter;
+}
+.xalapa{
+  font-size: 9pt;
+  text-align: center;
+  color: #8E8C8C;
+  font-weight: lighter;
+}
+#parrafo{
+  text-align: center;
+  font-size: 10px;
+  color: #8E8C8C;
+}
+#parraf{
+  text-align: center;
+  font-size: 10px;
+  color: white;
+  font-weight: lighter;
+}
+#parra{
+    left: 400px;
+      -webkit-transform: rotate(-90deg); 
+      -moz-transform: rotate(-90deg); 
+      -ms-transform: rotate(-90deg); 
+      -o-transform: rotate(-90deg); 
+      transform: rotate(-90deg); 
+      
+      -webkit-transform-origin: 50% 50%; 
+      -moz-transform-origin: 50% 50%; 
+      -ms-transform-origin: 50% 50%; 
+      -o-transform-origin: 50% 50%; 
+      transform-origin: 50% 50%; 
+      
+      text-align: justify;
+  font-size: 10px;
+  color: #8E8C8C;
+  font-weight: lighter;
+}
+#parr{
+  left: 400px;
+    -webkit-transform: rotate(-90deg); 
+    -moz-transform: rotate(-90deg); 
+    -ms-transform: rotate(-90deg); 
+    -o-transform: rotate(-90deg); 
+    transform: rotate(-90deg); 
+    
+    -webkit-transform-origin: 50% 50%; 
+    -moz-transform-origin: 50% 50%; 
+    -ms-transform-origin: 50% 50%; 
+    -o-transform-origin: 50% 50%; 
+    transform-origin: 50% 50%; 
+    
+    text-align:left;
+font-size: 8px;
+color: #8E8C8C;
+font-weight: lighter;
+
+}
+
+
+.tabla3{
+  width: 260px;
+  float: right;
+  height: 100px;
+  margin-left: 47rem;
+  border-top: #8E8C8C;
+  border-bottom: #8E8C8C;
+  border-right: #8E8C8C;
+  border-left: #8E8C8C;
+}
+
+.tabla4{
+  width: 260px;
+  float: right;
+  margin-left: 47rem;
+  border-top: #8E8C8C;
+  border-bottom: #8E8C8C;
+  border-right: #8E8C8C;
+  border-left: #8E8C8C;
+}
+
+#par{
+  text-align: center;
+  font-size: 10px;
+  color: white;
+  font-weight: lighter;
+}
+#para{
+  text-align: left;
+  font-size: 10px;
+  color: #8E8C8C;
+  font-weight: lighter;
+  word-wrap: break-word;
+}
+
+.asist{
+  text-align: center;
+  font-size: 10px;
+  color: white;
+  font-weight: lighter;
+}
+.asis{
+  text-align: center;
+  font-size: 10px;
+  color: #8E8C8C;
+  font-weight: lighter;
+}
+.asisMin{
+  font-size: 5.5pt;
+}
+.pro{
+  text-align: center;
+  font-size: 10px;
+  color: white;
+  font-weight: lighter;
+}
+.table5{
+  margin:0 auto;
+}
+.perio{
+  text-align: left;
+  font-size: 10px;
+  color: #8E8C8C;
+  font-weight: lighter;
+}
+
+.table7{
+  border:none;
+  margin:0 auto;
+}
+.sellito{
+  width: 40px;
+  height: 35px;
+}
+.fecha{
+  text-align: center;
+  font-size: 6px;
+  color: #000000;
+  font-weight: lighter;
+}
+.fechas{
+  text-align: center;
+  font-size: 6px;
+  color: #000000;
+  font-weight: lighter;
+}
+.table8 td{
+  border-top: 0px;
+ 
+}
+.table8{
+  border-top-color: #ffffff;
+  margin:0 auto;
+  width: 110px;
+}
+.table8 tr {
+   border-bottom-color: #ffffff;
+}
+.obser{
+  text-align: center;
+  font-size: 10px;
+  color: white;
+  font-weight: lighter;
+}
+
+.observaciones{
+  width: 475px;
+  height: 460px;
+  margin-left: -2rem;
+ 
+ 
+}
+.table9{
+  table-layout: fixed;
+  width: 745px;
+ 
+  float: left;
+}
+.table9 td{
+ 
+  height:30%;
+}
+#ob{
+  left: 400px;
+    -webkit-transform: rotate(-90deg); 
+    -moz-transform: rotate(-90deg); 
+    -ms-transform: rotate(-90deg); 
+    -o-transform: rotate(-90deg); 
+    transform: rotate(-90deg); 
+    
+    -webkit-transform-origin: 50% 50%; 
+    -moz-transform-origin: 50% 50%; 
+    -ms-transform-origin: 50% 50%; 
+    -o-transform-origin: 50% 50%; 
+    transform-origin: 50% 50%; 
+    
+    text-align:center;
+font-size: 10px;
+color: #8E8C8C;
+font-weight: lighter;
+
+}
+
+footer .folio{
+  margin-bottom: -60px;
+  text-align: left;
+  font-size: 9px;
+  color: #8E8C8C;
+ 
+}
+.foliofin{
+  text-align: center;
+  font-size: 8px;
+  color: #8E8C8C;
+  margin-bottom: -80px;
+ 
+}
+.cali{
+  font-size: 9px;
+  text-align: center;
+}
+
+
