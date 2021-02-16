@@ -19,7 +19,7 @@ Route::get('/admin', function () {
 });
 
 Route::post('/pdfboleta', 'PDFController@PDFPeriodos')->name('boletaPDF');
-Route::get('/', 'PDFController@show');
+Route::get('/Generar', 'PDFController@show');
 
 
 
