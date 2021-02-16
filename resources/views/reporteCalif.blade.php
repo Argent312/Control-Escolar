@@ -12,7 +12,7 @@
         <h1>Reporte Para Calificaciones</h1>
         <h2>Sistema Educativo Nacional</h2>
         <h2>Escuela Secundaria</h2>
-        <h3>Clave 1234567</h3>
+        <h3>Clave 123456</h3>
     </div>
 </header>
 
