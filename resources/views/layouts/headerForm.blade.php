@@ -1,4 +1,6 @@
 @section('header')
+
+
 <div id="app">
     <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
         <div class="container">
@@ -82,6 +84,69 @@
         </div>
 
         <hr>
-    </div>
+  </div>  
 </div>
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color:#bdbdbd;">
+
+  <a class="navbar-brand" href="#">Reportes</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav" style="color:black;">
+
+      <li class="nav-item">
+        <a class="nav-link" href="{{ route('total.alumnos') }}">Total de Alumnos<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{route('total.alumnosgrupo')}}">Total de Alumnos Grupo</a>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Calificaciones(Materia-Grado)
+        </a>
+        
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="{{ route('reporte.lengua')}}">Lengua Materna(Español)</a>
+          <a class="dropdown-item" href="{{ route('reporte.mate')}}">Matemáticas</a>
+          <a class="dropdown-item" href="{{ route('reporte.ingles')}}">Lengua Extranjera (Inglés)</a>
+          <a class="dropdown-item" href="{{route('reporte.ciencias')}}">Ciencias</a>
+          <a class="dropdown-item" href="{{ route('reporte.historia')}}">Historia</a>
+          <a class="dropdown-item" href="{{ route('reporte.geo')}}">Geografia</a>
+          <a class="dropdown-item" href="{{route('reporte.civica')}}">Formación Cívica y Ética</a>
+          <a class="dropdown-item" href="{{ route('reporte.tecno')}}">Tecnologia</a>
+          <a class="dropdown-item" href="{{route('reporte.edu')}}">Educación Física</a>
+          <a class="dropdown-item" href="{{ route('reporte.artes')}}">Artes</a>
+        </div>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Calificaciones(Materia-Grupo
+        </a>
+        
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="{{ route('grupo.lengua')}}">Lengua Materna(Español)</a>
+          <a class="dropdown-item" href="{{ route('grupo.mate')}}">Matemáticas</a>
+          <a class="dropdown-item" href="{{ route('grupo.ingles')}}">Lengua Extranjera (Inglés)</a>
+          <a class="dropdown-item" href="{{route('grupo.ciencias')}}">Ciencias</a>
+          <a class="dropdown-item" href="{{ route('grupo.historia')}}">Historia</a>
+          <a class="dropdown-item" href="{{ route('grupo.geo')}}">Geografia</a>
+          <a class="dropdown-item" href="{{route('grupo.civica')}}">Formación Cívica y Ética</a>
+          <a class="dropdown-item" href="{{ route('grupo.tecno')}}">Tecnologia</a>
+          <a class="dropdown-item" href="{{route('grupo.edu')}}">Educación Física</a>
+          <a class="dropdown-item" href="{{ route('grupo.artes')}}">Artes</a>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+
+
+
+</nav>
+
+   
 @endsection
