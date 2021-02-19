@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="{{ asset(mix('css/app.css')) }}" rel="stylesheet">
     <link href="{{ asset(mix('css/styles.css')) }}" rel="stylesheet">
-    <link href="{{ asset(mix('css/reportes.css')) }}" rel="stylesheet">
+    <link href="{{ asset(css/reportes.css') }}" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
@@ -22,101 +22,101 @@
     <div class="main container" id="app">
         @yield('header')
         @yield('content')
-    <div class="row">
-        <div class="col s4">
-             <div class="card-panel grey lighten-1 titulo">
-                <h3>Relación Aprobados y Reprobados por Materia-Grupo</h3>         
+        <div class="row">
+            <div class="col s4">
+                <div class="card-panel grey lighten-1 titulo">
+                    <h3>Relación Aprobados y Reprobados por Materia-Grupo</h3>
+                </div>
             </div>
         </div>
-    </div>
-    
-    
-    
-    <div class="row">
 
-    <div class="col s6">
-        <div class="card-content ">
-			<div class="card-panel grey lighten-1">
-            <h6 style="text-align:center;
+
+
+        <div class="row">
+
+            <div class="col s6">
+                <div class="card-content ">
+                    <div class="card-panel grey lighten-1">
+                        <h6 style="text-align:center;
                             font-weight:bold;
                             font-size:35px;
                             margin-bottom:auto;">Primer Año</h6>
-                @yield('graficauno')
-			</div>
-        </div>
-    </div>
+                        @yield('graficauno')
+                    </div>
+                </div>
+            </div>
 
-	<div class="col s6">
-        <div class="card-content ">
-			<div class="card-panel grey lighten-1">
-            <h6 style="text-align:center;
+            <div class="col s6">
+                <div class="card-content ">
+                    <div class="card-panel grey lighten-1">
+                        <h6 style="text-align:center;
                             font-weight:bold;
                             font-size:35px;
                             padding-bottom:auto;">Primer Año</h6>
-            @yield('graficados')
-			</div>
+                        @yield('graficados')
+                    </div>
+                </div>
+            </div>
+
         </div>
-    </div>
 
-    </div>
+        <div class="row">
 
-    <div class="row">
-
-    <div class="col s6">
-        <div class="card-content ">
-			<div class="card-panel grey lighten-1">
-            <h6 style="text-align:center;
+            <div class="col s6">
+                <div class="card-content ">
+                    <div class="card-panel grey lighten-1">
+                        <h6 style="text-align:center;
                             font-weight:bold;
                             font-size:35px;
                             margin-bottom:auto;">Segundo Año</h6>
-                @yield('graficatres')
-			</div>
-        </div>
-    </div>
+                        @yield('graficatres')
+                    </div>
+                </div>
+            </div>
 
-	<div class="col s6">
-        <div class="card-content ">
-			<div class="card-panel grey lighten-1">
-            <h6 style="text-align:center;
+            <div class="col s6">
+                <div class="card-content ">
+                    <div class="card-panel grey lighten-1">
+                        <h6 style="text-align:center;
                             font-weight:bold;
                             font-size:35px;
                             margin-bottom:auto;">Segundo Año</h6>
-            @yield('graficacuatro')
-			</div>
+                        @yield('graficacuatro')
+                    </div>
+                </div>
+            </div>
+
         </div>
-    </div>
-    
-    </div>
 
-    <div class="row">
+        <div class="row">
 
-    <div class="col s6">
-        <div class="card-content ">
-			<div class="card-panel grey lighten-1">
-                <h6 style="text-align:center;
+            <div class="col s6">
+                <div class="card-content ">
+                    <div class="card-panel grey lighten-1">
+                        <h6 style="text-align:center;
                             font-weight:bold;
                             font-size:35px;
                             margin-bottom:auto;">Tercer Año</h6>
-                @yield('graficacinco')
-			</div>
-        </div>
-    </div>
+                        @yield('graficacinco')
+                    </div>
+                </div>
+            </div>
 
-	<div class="col s6">
-        <div class="card-content ">
-			<div class="card-panel grey lighten-1">
-            <h6 style="text-align:center;
+            <div class="col s6">
+                <div class="card-content ">
+                    <div class="card-panel grey lighten-1">
+                        <h6 style="text-align:center;
                             font-weight:bold;
                             font-size:35px;
                             margin-bottom:auto;">Tercer Año</h6>
-            @yield('graficaseis')
-			</div>
-        </div>
-    </div>
-    
-    </div>
+                        @yield('graficaseis')
+                    </div>
+                </div>
+            </div>
 
-</div>
+        </div>
+
+    </div>
 
     <footer>
         @yield('footer')
@@ -128,8 +128,8 @@
     <script src="{{ asset('js/app.js') }}"></script>
     <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
     <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
-   
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.7.3/dist/Chart.min.js"></script> 
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.7.3/dist/Chart.min.js"></script>
 </body>
 
 </html>

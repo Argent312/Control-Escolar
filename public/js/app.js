@@ -2091,55 +2091,214 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
-    console.log('Component mounted.');
+    console.log("Component mounted.");
   },
   data: function data() {
     return {
       alumno: {
-        nombre: '',
-        apellidoPaterno: '',
-        apellidoMaterno: '',
-        curp: '',
-        telefono: '',
-        edad: '',
-        sexo: '',
-        sangre: '',
-        fechaNacimiento: '',
-        lugarNacimiento: '',
-        nacionalidad: '',
-        grado: '',
-        grupo: '',
-        turno: '',
-        direccion: '',
-        colonia: '',
-        cp: '',
-        entidad: '',
-        ciudad: '',
-        idtutor: ''
+        nombre: "",
+        apellidoPaterno: "",
+        apellidoMaterno: "",
+        curp: "",
+        telefono: "",
+        edad: "",
+        sexo: "",
+        sangre: "",
+        fechaNacimiento: "",
+        lugarNacimiento: "",
+        nacionalidad: "",
+        grado: "",
+        grupo: "",
+        turno: "",
+        direccion: "",
+        colonia: "",
+        cp: "",
+        entidad: "",
+        ciudad: "",
+        idtutor: "",
+        tecnologia: ""
       },
       tutor: {
-        nombre: '',
-        apellidoPaterno: '',
-        apellidoMaterno: '',
-        domicilio: '',
-        ciudad: '',
-        colonia: '',
-        ocupacion: '',
-        telCasa: '',
-        telTrabajo: '',
-        celular: ''
+        nombre: "",
+        apellidoPaterno: "",
+        apellidoMaterno: "",
+        domicilio: "",
+        ciudad: "",
+        colonia: "",
+        ocupacion: "",
+        telCasa: "",
+        telTrabajo: "",
+        celular: ""
       },
-      mensaje: '',
-      confirmacion: ''
+      mensaje: "",
+      confirmacion: ""
     };
   },
   methods: {
     crear: function crear() {
       var _this = this;
 
-      if (this.alumno.nombre.trim() === '' || this.alumno.apellidoPaterno.trim() === '' || this.alumno.apellidoMaterno.trim() === '' || this.alumno.curp.trim() === '' || this.alumno.telefono.trim() === '' || this.alumno.edad.trim() === '' || this.alumno.sexo.trim() === '' || this.alumno.sangre.trim() === '' || this.alumno.fechaNacimiento.trim() === '' || this.alumno.lugarNacimiento.trim() === '' || this.alumno.grado.trim() === '' || this.alumno.grupo.trim() === '' || this.alumno.turno.trim() === '' || this.alumno.direccion.trim() === '' || this.alumno.colonia.trim() === '' || this.alumno.cp.trim() === '' || this.alumno.entidad.trim() === '' || this.alumno.ciudad.trim() === '' || this.tutor.nombre.trim() === '' || this.tutor.apellidoPaterno.trim() === '' || this.tutor.apellidoMaterno.trim() === '' || this.tutor.domicilio.trim() === '' || this.alumno.nacionalidad.trim() === '' || this.tutor.ciudad.trim() === '' || this.tutor.colonia.trim() === '' || this.tutor.ocupacion.trim() === '' || this.tutor.telCasa.trim() === '' || this.tutor.telTrabajo.trim() === '' || this.tutor.celular.trim() === '') {
+      if (this.alumno.nombre.trim() === "" || this.alumno.apellidoPaterno.trim() === "" || this.alumno.apellidoMaterno.trim() === "" || this.alumno.curp.trim() === "" || this.alumno.telefono.trim() === "" || this.alumno.edad.trim() === "" || this.alumno.sexo.trim() === "" || this.alumno.sangre.trim() === "" || this.alumno.fechaNacimiento.trim() === "" || this.alumno.lugarNacimiento.trim() === "" || this.alumno.grado.trim() === "" || this.alumno.grupo.trim() === "" || this.alumno.turno.trim() === "" || this.alumno.direccion.trim() === "" || this.alumno.colonia.trim() === "" || this.alumno.cp.trim() === "" || this.alumno.entidad.trim() === "" || this.alumno.tecnologia.trim() === "" || this.alumno.ciudad.trim() === "" || this.tutor.nombre.trim() === "" || this.tutor.apellidoPaterno.trim() === "" || this.tutor.apellidoMaterno.trim() === "" || this.tutor.domicilio.trim() === "" || this.alumno.nacionalidad.trim() === "" || this.tutor.ciudad.trim() === "" || this.tutor.colonia.trim() === "" || this.tutor.ocupacion.trim() === "" || this.tutor.telCasa.trim() === "" || this.tutor.telTrabajo.trim() === "" || this.tutor.celular.trim() === "") {
         this.mensaje = "Debes completar todos los campos";
         this.confirmacion = "bg-danger";
         return;
@@ -2157,7 +2316,7 @@ __webpack_require__.r(__webpack_exports__);
         telTrabajo: this.tutor.telTrabajo,
         celular: this.tutor.celular
       };
-      axios.post('/tutor', paramsTutor).then(function (res) {
+      axios.post("/tutor", paramsTutor).then(function (res) {
         _this.alumno.idtutor = res.data;
         console.log(_this.alumno.idtutor);
         var paramsAlumno = {
@@ -2180,42 +2339,43 @@ __webpack_require__.r(__webpack_exports__);
           cp: _this.alumno.cp,
           entidad: _this.alumno.entidad,
           ciudad: _this.alumno.ciudad,
-          idtutor: _this.alumno.idtutor
+          idtutor: _this.alumno.idtutor,
+          tecnologia: _this.alumno.tecnologia
         };
-        axios.post('/alumno', paramsAlumno).then(function (res) {
-          _this.mensaje = "Registro " + _this.alumno.nombre + " " + _this.alumno.apellidoPaterno + ' Creado';
+        axios.post("/alumno", paramsAlumno).then(function (res) {
+          _this.mensaje = "Registro " + _this.alumno.nombre + " " + _this.alumno.apellidoPaterno + " Creado";
           _this.confirmacion = "bg-success"; //clean form
 
-          _this.alumno.nombre = '';
-          _this.alumno.apellidoPaterno = '';
-          _this.alumno.apellidoMaterno = '';
-          _this.alumno.curp = '';
-          _this.alumno.telefono = '';
-          _this.alumno.edad = '';
-          _this.alumno.sexo = '';
-          _this.alumno.sangre = '';
-          _this.alumno.fechaNacimiento = '';
-          _this.alumno.lugarNacimiento = '';
-          _this.alumno.nacionalidad = '';
-          _this.alumno.grado = '';
-          _this.alumno.grupo = '';
-          _this.alumno.turno = '';
-          _this.alumno.direccion = '';
-          _this.alumno.colonia = '';
-          _this.alumno.cp = '';
-          _this.alumno.entidad = '';
-          _this.alumno.ciudad = '';
-          _this.alumno.idtutor = '';
-          _this.tutor.nombre = '';
-          _this.tutor.apellidoPaterno = '';
-          _this.tutor.apellidoMaterno = '';
-          _this.tutor.domicilio = '';
-          _this.tutor.ciudad = '';
-          _this.tutor.colonia = '';
-          _this.tutor.ocupacion = '';
-          _this.tutor.telCasa = '';
-          _this.tutor.telTrabajo = '';
-          _this.tutor.celular = '';
+          _this.alumno.nombre = "";
+          _this.alumno.apellidoPaterno = "";
+          _this.alumno.apellidoMaterno = "";
+          _this.alumno.curp = "";
+          _this.alumno.telefono = "";
+          _this.alumno.edad = "";
+          _this.alumno.sexo = "";
+          _this.alumno.sangre = "";
+          _this.alumno.fechaNacimiento = "";
+          _this.alumno.lugarNacimiento = "";
+          _this.alumno.nacionalidad = "";
+          _this.alumno.grado = "";
+          _this.alumno.grupo = "";
+          _this.alumno.turno = "";
+          _this.alumno.direccion = "";
+          _this.alumno.colonia = "";
+          _this.alumno.cp = "";
+          _this.alumno.entidad = "";
+          _this.alumno.ciudad = "";
+          _this.alumno.idtutor = "";
+          _this.tutor.nombre = "";
+          _this.tutor.apellidoPaterno = "";
+          _this.tutor.apellidoMaterno = "";
+          _this.tutor.domicilio = "";
+          _this.tutor.ciudad = "";
+          _this.tutor.colonia = "";
+          _this.tutor.ocupacion = "";
+          _this.tutor.telCasa = "";
+          _this.tutor.telTrabajo = "";
+          _this.tutor.celular = "";
         });
       });
     },
@@ -38830,6 +38990,36 @@ var render = function() {
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "col mb-3" }, [
+        _c(
+          "label",
+          { staticClass: "form-label", attrs: { for: "tecnologia" } },
+          [_vm._v("Tecnologi")]
+        ),
+        _vm._v(" "),
+        _c("input", {
+          directives: [
+            {
+              name: "model",
+              rawName: "v-model",
+              value: _vm.alumno.tecnologia,
+              expression: "alumno.tecnologia"
+            }
+          ],
+          staticClass: "form-control",
+          attrs: { type: "text", id: "tecnologia" },
+          domProps: { value: _vm.alumno.tecnologia },
+          on: {
+            input: function($event) {
+              if ($event.target.composing) {
+                return
+              }
+              _vm.$set(_vm.alumno, "tecnologia", $event.target.value)
+            }
+          }
+        })
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col mb-3" }, [
         _c("label", { attrs: { for: "turno" } }, [_vm._v("Turno")]),
         _vm._v(" "),
         _c(
@@ -39368,7 +39558,7 @@ var render = function() {
             attrs: { type: "button" },
             on: { click: _vm.cancelar }
           },
-          [_vm._v("Cancelar")]
+          [_vm._v("\n      Cancelar\n    ")]
         )
       ])
     ]
