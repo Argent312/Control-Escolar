@@ -20,8 +20,7 @@ class UserController extends Controller
     {
         $periodo = \DB::table('calificaciones')
         ->select('alumnos.idAlumno', 'alumnos.nombre', 'alumnos.apellidoPaterno', 'alumnos.apellidoMaterno',
-        'calificaciones.faltas_asistencia', 'calificaciones.asistencias',
-        'calificaciones.Trimestre_idTrimestre')
+        'calificaciones.faltas_asistencia', 'calificaciones.Trimestre_idTrimestre')
         ->join ('alumnos', 'calificaciones.alumnos_idAlumno', '=', 'alumnos.idAlumno',)
         ->join ('trimestre', 'calificaciones.Trimestre_idTrimestre', '=', 'trimestre.idTrimestre', )
         ->get();

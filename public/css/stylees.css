@@ -18,12 +18,12 @@
     
     .naveg a {
         padding: 0px;
-        margin: 0px;
+        margin: 0px;           
     }
     
-    .naveg li a {
-        background-color: rgb(187, 182, 182);
-        color: black;
+    .naveg li a {        
+        background-color: rgb(19, 16, 16);  /*PARA CAMBIAR EL COLOR DE LA TABLA CALIFICACION*/
+        color: rgb(rgb(20, 216, 20));
         text-decoration: none;
         padding: 10px 15px;
         display: block;
@@ -41,7 +41,8 @@
     }
     
     .naveg li a:hover {
-        background-color: darkgrey;
+
+        background-color: rgb(250, 29, 29);
     }
     
     .cont div {
@@ -54,7 +55,7 @@
         margin: 0px;
     }
     
-    .naveg li ul {
+    .naveg li ul {        
         display: none;
         position: absolute;
         min-width: 100px;
@@ -98,20 +99,20 @@
         border-collapse: collapse;
         text-align: center;
         margin: 1px;
-        background-color: rgb(28, 12, 75);
-        color: rgb(247, 245, 245);
+        background-color: rgb(241, 241, 241); /*CAMBIA EL COLOR DEL CONTORNO DE LA TABLA CALIFICACIONES*/
+        color: rgb(17, 15, 15); /*CAMBIA EL COLOR DE LAS LETRAS DENTRO DE LA TABLA*/
     }
     
     th,
     td {
-        border: solid 1px black;
+        border: solid 1px rgb(24, 26, 25); /*CAMBIA LAS LIENAS DE COLOR DE LA TABLA*/
         padding: 0px;
     }
-    
+    /*estilo de la tabla*/
     .encabezado {
-        background-color: #3f4242;
-        border-bottom: solid 5px #f7efd9;
-        color: white;
+        background-color: #f1ebef; /*CAMBIA EL COLOR DEL CONTORNO DE LA TABLA ASISTENCIA*/
+        border-bottom: solid 1px #c5f84e; /**/
+        color: rgb(15, 15, 14);/*CAMBIA EL COLOR DE LAS LETRAS DENTRO DE LA TABLA ASISTENCIA*/
     }
     /* tr:nth-child(odd) {
         background-color: gray;

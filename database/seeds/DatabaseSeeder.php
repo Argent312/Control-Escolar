@@ -10,9 +10,7 @@ class DatabaseSeeder extends Seeder
      * @return void
      */
     public function run()
-    {
-
-        
+    {        
         $this->call(MenusTableSeeder::class);
         // \App\Models\User::factory(10)->create();
     }

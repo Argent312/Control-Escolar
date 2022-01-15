@@ -101,7 +101,7 @@ Route::get('/', function () {
 //INNER JOIN CONSULTA DE 3 TABLAS
 Route::get('/select', function(){
    DB::select('SELECT alumnos.idAlumno, alumnos.nombre, alumnos.apellidoPaterno, alumnos.apellidoMaterno, 
-calificaciones.idCalificaciones, calificaciones.faltas_asistencia, idTrimestre, calificaciones.Trimestre_idTrimestre
+calificaciones.idCalificaciones, calificaciones.faltas_asistencia, calificaciones.asistencias, idTrimestre, calificaciones.Trimestre_idTrimestre
 FROM calificaciones 
 INNER JOIN alumnos 
 ON calificaciones.alumnos_idAlumno = alumnos.idAlumno
@@ -124,7 +124,7 @@ ON calificaciones.Trimestre_idTrimestre = trimestre.idTrimestre;');
 //consulta con 4 tablas calif, alum, trim, periodo
 Route::get('/select', function(){
    DB::select('SELECT alumnos.idAlumno, alumnos.nombre, alumnos.apellidoPaterno, alumnos.apellidoMaterno, 
-calificaciones.idCalificaciones, calificaciones.faltas_asistencia, 
+calificaciones.idCalificaciones, calificaciones.faltas_asistencia,
 calificaciones.Trimestre_idTrimestre, periodo.idPeriodo, periodo.inicioClase, periodo.finClase
 FROM calificaciones 
 INNER JOIN alumnos 

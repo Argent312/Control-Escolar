@@ -26,7 +26,7 @@
                     <th>Apellido Paterno</th>
                     <th>Apellido Materno</th>
                     <th>Faltas</th>
-                    <th>Asistencia</th>
+                    
                     <th>Id Trimestre</th>
                 </tr>
                 @foreach($periodo as $p)
@@ -36,7 +36,7 @@
                     <td>{{ $p->apellidoPaterno}}</td>
                     <td>{{ $p->apellidoMaterno}}</td>
                     <td>{{ $p->faltas_asistencia}}</td>
-                    <td>{{ $p->asistencias}}</td>
+                    
                     <td>{{ $p->Trimestre_idTrimestre}}</td>
                 </tr>
                 @endforeach
